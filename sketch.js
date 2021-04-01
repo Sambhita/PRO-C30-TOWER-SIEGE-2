@@ -153,11 +153,12 @@ function mouseDragged(){
 }
 
 function mouseReleased(){
-  slingshot.fly();
+  slingShot.fly();
   gameState = "offSling";
 }
 
 function keyPressed(){
   if(keyCode===32)
-  slingshot.attach(this.ball);
+  slingShot.attach(this.ball);
+  Matter.Body.setPosition(this.bird, {x:200,y:50});
 }

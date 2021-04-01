@@ -13,7 +13,7 @@ class Block{
       display(){
 
       console.log(this.body.speed)
-      if((this.body.speed)<5){
+      if(this.body.speed<10){
         var angle = this.body.angle;
         var pos= this.body.position;
         push();
